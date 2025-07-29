@@ -1,1 +1,0 @@
-# gibionmutai-frontend-assessment

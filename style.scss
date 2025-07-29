@@ -1,0 +1,199 @@
+        .body {
+            font-family: 'Inter', sans-serif;
+            background-color: $light-grey-bg; /* Light background for the page */
+            padding-left: 20px; /* Adjust this value as needed for the desired shift */
+            padding-right: 20px;
+            color: $dark-text;
+            line-height: 1.6; /* Improved readability */
+        }
+        .p{
+            padding: 0.5rem 1rem; /* Consistent padding for paragraphs */
+            margin-bottom: 1rem; /* Space between paragraphs */
+            color: $dark-text;
+            transition: font-size 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+        /* Style for the split characters - by default, SplitText creates <div>s */
+        .char {
+            display: inline-block; /* Crucial for animating individual letters */
+            color: white; /* Initial color of letters */
+            transform-origin: center center; /* Ensure scaling is from the center */
+            opacity: 0; /* Letters start invisible */
+            font-size: 1em; /* Base font size for the letters */
+        }
+        /* Custom scrollbar for better aesthetics in the timeline section */
+        .scrollable-content::-webkit-scrollbar {
+            width: 6px;
+        }
+        .scrollable-content::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        .scrollable-content::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+        .scrollable-content::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        /* Ensure images in Bootstrap cards are responsive */
+        .about-us-image-card img,
+        .mission-image-card img {
+            width: 70%;
+            height: auto;
+            display: block;
+        }
+        .our-partners-section {
+            padding: 80px 0; /* Vertical padding for the section */
+            text-align: center; /* Center align all content within the section */
+        }
+        .our-partners-section h6 {
+            color: #ff5722; /* Orange color for "OUR PARTNERS" */
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+        .our-partners-section h2 {
+            font-size: 2.5rem; /* Large font size for the main heading */
+            font-weight: 700;
+            color: #343a40; /* Dark color for the heading */
+            margin-bottom: 20px;
+        }
+        .our-partners-section p.lead {
+            font-size: 1.1rem;
+            color: #6c757d; /* Gray color for the description */
+            max-width: 700px; /* Limit width for better readability */
+            margin: 0 auto 50px auto; /* Center and add bottom margin */
+        }
+        .partner-card {
+            background-color: #ffffff; /* White background for cards */
+            border-radius: 15px; /* Rounded corners for cards */
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+            transition: transform 0.3s ease; /* Smooth hover effect */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%; /* Ensure cards are same height */
+        }
+        .partner-card:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+        }
+        .partner-card img {
+            width: 100px; /* Fixed width for icons */
+            height: 100px; /* Fixed height for icons */
+            margin-bottom: 20px;
+            object-fit: contain; /* Ensure image fits without cropping */
+        }
+        .partner-card h5 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #343a40;
+            margin-bottom: 10px;
+        }
+        .partner-card p {
+            font-size: 0.95rem;
+            color: #6c757d;
+            line-height: 1.6;
+        }
+         .press-news-section {
+            background-color: #f8f9fa; /* Light background for the section */
+            padding: 80px 0; /* Vertical padding */
+            text-align: center;
+        }
+        .press-news-section h6 {
+            color: #ff5722; /* Orange color for sub-heading */
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+        .press-news-section h2 {
+            color: #343a40; /* Dark color for main heading */
+            font-weight: 700;
+            font-size: 2.5rem; /* Large font size */
+            margin-bottom: 20px;
+        }
+        .press-news-section h2:nth-of-type(2) { /* Adjust margin for the second line of the heading */
+            margin-bottom: 4rem; /* More space below the main heading */
+        }
+        .press-news-section .news-card {
+            background-color: #ffffff; /* White background for cards */
+            border-radius: 15px; /* Rounded corners */
+            padding: 2rem; /* Padding inside cards */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+            text-align: left; /* Ensure content is left-aligned within the card */
+        }
+        .press-news-section .news-card:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* More pronounced shadow on hover */
+        }
+        .press-news-section .news-card .flex { /* For the icon and "company" text */
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        .press-news-section .news-card .flex svg { /* Icon styling */
+            width: 1.5rem;
+            height: 1.5rem;
+            color: #ef4444; /* Red color for the icon (Tailwind's red-500) */
+            margin-right: 0.5rem;
+        }
+        .press-news-section .news-card .flex span { /* "company" text */
+            color: #6b7280; /* Gray color (Tailwind's gray-500) */
+            font-size: 0.875rem; /* text-sm */
+            font-weight: 500; /* font-medium */
+        }
+        .press-news-section .news-card h5 { /* Card title */
+            font-weight: 700; /* font-bold */
+            font-size: 1.25rem; /* text-xl */
+            color: #343a40; /* Dark color */
+            margin-bottom: 1rem;
+        }
+        .press-news-section .news-card .flex.justify-between { /* For "Read more" and date */
+            font-size: 0.875rem; /* text-sm */
+            color: #6b7280; /* Gray color */
+        }
+        .press-news-section .news-card .flex.justify-between a { /* Read more link */
+            color: #ff5722; /* Orange color */
+            font-weight: 600; /* font-semibold */
+            display: flex;
+            align-items: center;
+        }
+        .press-news-section .news-card .flex.justify-between a svg { /* Arrow icon */
+            width: 1rem;
+            height: 1rem;
+            margin-left: 0.25rem;
+        }
+        .text-custom-orange {
+            color: #FF5733 !important; /* A vibrant orange/coral color similar to the image */
+        }
+        .news-card .company-logo {
+            width: auto; /* Allow natural width */
+            height: 24px; /* Fixed height for consistency */
+            margin-bottom: 26px; /* Spacing below the logo */
+        }
+        /* Custom styles for the company icon if using SVG */
+        .company-icon {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background-color: #f97316; /* Orange-500 */
+            border-radius: 4px; /* Slightly rounded */
+            vertical-align: middle; /* Align with text */
+            margin-right: 8px; /* Space between icon and text */
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 768px) {
+            .our-partners-section h2 {
+                font-size: 2rem;
+            }
+            .our-partners-section p.lead {
+                font-size: 1rem;
+            }
+            .partner-card {
+                margin-bottom: 30px; /* Add space between cards on small screens */
+            }
+        }
+
+
